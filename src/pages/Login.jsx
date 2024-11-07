@@ -6,9 +6,14 @@ import {Header} from '../molecules/Header';
 import {LoginForm} from '../molecules/LoginForm';
 import HomeImage from '../image/homeImage.svg';
 import BackgroundCoffee from '../image/backgroundCoffee.svg';
+import {mediaMinwidth} from '../styles/utils/helpers';
 
 const Image = styled.img`
+  display: none;
   width: 49rem;
+  ${mediaMinwidth.lg} {
+    display: block;
+  }
 `;
 
 const LayoutLogin = styled.div`
