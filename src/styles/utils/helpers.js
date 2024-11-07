@@ -14,7 +14,7 @@ export const mediaMinwidth = breakpoints.reduce((minObject, {key, value}) => {
 }, {});
 
 export const mediaMaxwidth = breakpoints.reduce((maxObject, {key, value}) => {
-  maxObject[key] = `@media (max-width: ${value}px)`;
+  maxObject[key] = `@media (max-width: ${value - 0.2}px)`;
 
   return maxObject;
 }, {});
