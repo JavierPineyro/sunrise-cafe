@@ -10,8 +10,9 @@ import {mediaMinwidth} from '../styles/utils/helpers';
 
 const Image = styled.img`
   display: none;
-  width: 49rem;
-  ${mediaMinwidth.lg} {
+  width: 50%;
+  max-width: 49rem;
+  ${mediaMinwidth.md} {
     display: block;
   }
 `;
