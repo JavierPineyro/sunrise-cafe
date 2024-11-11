@@ -3,12 +3,20 @@ import styled from '@emotion/styled';
 
 import H1 from '../atoms/H1';
 import IconCoffee from '../image/IconCoffee.svg';
+import {mediaMinwidth} from '../styles/utils/helpers';
 
 const Logo = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
+  ${H1} {
+    font-size: 2rem;
+    line-height: 1.75rem;
+    ${mediaMinwidth.md} {
+      line-height: 3.5rem;
+      font-size: 2.8rem;
+    }
+  }
 `;
 
 const LogoIcon = styled.img`
