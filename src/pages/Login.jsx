@@ -6,9 +6,15 @@ import {Header} from '../molecules/Header';
 import {LoginForm} from '../molecules/LoginForm';
 import HomeImage from '../image/homeImage.svg';
 import BackgroundCoffee from '../image/backgroundCoffee.svg';
+import {mediaMinwidth} from '../styles/utils/helpers';
 
 const Image = styled.img`
-  width: 49rem;
+  display: none;
+  width: 50%;
+  max-width: 49rem;
+  ${mediaMinwidth.md} {
+    display: block;
+  }
 `;
 
 const LayoutLogin = styled.div`
