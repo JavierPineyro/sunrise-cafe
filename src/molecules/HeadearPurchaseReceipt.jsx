@@ -8,7 +8,7 @@ const HeaderOneDouble = styled.h1`
 
 const BlockLeft = styled.p`
   font-size: 2rem;
-  > p {
+  > span {
     margin: 1rem 0;
   }
 `;
@@ -29,8 +29,9 @@ export const HeadearPurchaseReceipt = ({paymentDate, paymentHour, paymentNumber}
       <HeaderOneDouble>Recibo</HeaderOneDouble>
       <FlexContainer>
         <BlockLeft>
-          <p>{paymentDate}</p>
-          <p>{paymentHour}</p>
+          <span>{paymentDate}</span>
+          <br />
+          <span>{paymentHour}</span>
         </BlockLeft>
         <BlockRight>Orden No. {paymentNumber}</BlockRight>
       </FlexContainer>
